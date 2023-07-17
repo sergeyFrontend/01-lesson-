@@ -91,9 +91,9 @@
 let password = "1234-";
 
 if (password.length > 4 && (password.includes("-") || password.includes("_"))) {
-  console.log("Пароль надёжный ");
+  // console.log("Пароль надёжный ");
 } else {
-  console.log("Пароль недостаточно надёжный");
+  // console.log("Пароль недостаточно надёжный");
 }
 
 //ex2
@@ -103,8 +103,8 @@ let convertUserName = userName[0].toUpperCase() + userName.slice(1).toLocaleLowe
 let convertSurName =  surName[0].toUpperCase() + surName.slice(1).toLocaleLowerCase();
 
 
-  console.log('Имя:', convertUserName);
-  console.log('Фамилия:', convertSurName);
+  // console.log('Имя:', convertUserName);
+  // console.log('Фамилия:', convertSurName);
 
 
   userName !== convertUserName ? console.log('Имя было изменено') : console.log('Имя было не изменено ');
@@ -117,7 +117,7 @@ let convertSurName =  surName[0].toUpperCase() + surName.slice(1).toLocaleLowerC
 let number = 31;
 
 if (number % 2 === 0) {
-  console.log("number is even");
+  // console.log("number is even");
 } else {
-  console.log("number is odd");
+  // console.log("number is odd");
 }
