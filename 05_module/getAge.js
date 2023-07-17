@@ -2,7 +2,7 @@ function getAge(age) {
   // let currentDate = new Date()
   const currentYear = new Date().getFullYear();
 
-  let peopleAge = currentYear - age;
+  let peopleAge = currentYear - parseInt(year);
 
   return peopleAge;
 }

@@ -11,12 +11,11 @@ const whiteList = [
 const blackList = ["jsfunc@mail.ru", "goodday@day.ru"];
 
 function filter(whiteList, blackList) {
+  const blackSet = new Set(blackList)
   let arrayCorrectEmails = [];
 
   for (let email of whiteList) {
-    let item = blackList.indexOf(email);
-
-    if (item === -1) {
+    if (!blackSet.has(email)) {
       arrayCorrectEmails.push(email);
     }
   }
